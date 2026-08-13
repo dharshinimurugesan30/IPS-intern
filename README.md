@@ -1,7 +1,7 @@
-  Thirukkural Meaning Finder
+  Thirukkural Meaning Finder:
 A simple Flask-based web application that allows users to enter any Thirukkural number from 1 to 1330 and view the corresponding Kural, chapter, and Tamil meaning.
 
-  Features
+  Features:
 1.Search any Thirukkural from 1–1330
 2.Displays the selected Kural number
 3.Displays the Thirukkural
@@ -11,7 +11,7 @@ A simple Flask-based web application that allows users to enter any Thirukkural 
 7.Simple and responsive user interface
 8.Built using Flask, HTML, and CSS
 
-  Technologies Used
+  Technologies Used:
 1.Python
 2.Flask
 3.HTML5
