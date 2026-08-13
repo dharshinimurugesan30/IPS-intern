@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 600px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+input {
+    padding: 12px;
+    width: 250px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 20px;
+    margin-left: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.result {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.kural {
+    font-size: 20px;
+    line-height: 2;
+}
+
+.meaning {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.error {
+    margin-top: 20px;
+    color: red;
+}

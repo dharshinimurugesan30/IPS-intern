@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ta">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thirukkural</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>திருக்குறள்</h1>
+
+        <p>Enter Thirukkural Number</p>
+
+        <form method="POST">
+
+            <input type="number" name="number" min="1" max="1330" placeholder="Enter 1 - 1330" required>
+
+            <button type="submit">Search</button>
+
+        </form>
+
+        {% if error %}
+        <div class="error">
+            {{ error }}
+        </div>
+        {% endif %}
+
+        {% if kural %}
+
+        <div class="result">
+
+            <h2>குறள் {{ kural.number }}</h2>
+
+            <p class="kural">
+                {{ kural.kural[0] }}<br>
+                {{ kural.kural[1] }}
+            </p>
+
+            <h3>அதிகாரம்</h3>
+
+            <p>
+                {{ kural.chapter }}
+            </p>
+
+            <h3>பொருள்</h3>
+
+            <p class="meaning">
+                {{ kural.meaning.ta_mu_va }}
+            </p>
+
+        </div>
+
+        {% endif %}
+
+    </div>
+
+</body>
+
+</html>
